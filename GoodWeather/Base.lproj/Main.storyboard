@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Good Weather-->
         <scene sceneID="YXs-33-Cae">
             <objects>
-                <tableViewController id="Du6-4h-j9V" sceneMemberID="viewController">
+                <tableViewController id="Du6-4h-j9V" customClass="WeatherListViewController" customModule="GoodWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="a5X-vA-sIg">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
                             <outlet property="delegate" destination="Du6-4h-j9V" id="H8E-SM-rIG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="jm2-Bo-uWN">
+                    <navigationItem key="navigationItem" title="Good Weather" id="jm2-Bo-uWN">
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="NlP-Rm-fRi"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="d7E-eR-Tre">
                             <connections>
@@ -47,7 +47,7 @@
         <!--Add City-->
         <scene sceneID="63y-91-8ej">
             <objects>
-                <viewController id="XBx-fe-Hqp" sceneMemberID="viewController">
+                <viewController id="XBx-fe-Hqp" customClass="AddWeatherCityViewController" customModule="GoodWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gqz-cB-mKp">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
