@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2754C35328EB3253006A5CBD /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754C35228EB3253006A5CBD /* WeatherCell.swift */; };
+		2754C37628EBFBE1006A5CBD /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754C37528EBFBE1006A5CBD /* WebService.swift */; };
+		2754C37928EBFC2A006A5CBD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2754C37828EBFC2A006A5CBD /* Alamofire */; };
+		2754C37C28EC09D3006A5CBD /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754C37B28EC09D3006A5CBD /* WeatherResponse.swift */; };
+		2754C37F28EC118D006A5CBD /* AddWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754C37E28EC118D006A5CBD /* AddWeatherViewModel.swift */; };
+		2754C38228EC1267006A5CBD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754C38128EC1267006A5CBD /* Constants.swift */; };
+		2754C38528EC14FE006A5CBD /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2754C38428EC14FE006A5CBD /* String+Extensions.swift */; };
+		277990A528EC1AC90016CE79 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277990A428EC1AC90016CE79 /* WeatherListViewModel.swift */; };
 		27A764BE28DB68FA00BB015F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A764BD28DB68FA00BB015F /* AppDelegate.swift */; };
 		27A764C028DB68FA00BB015F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A764BF28DB68FA00BB015F /* SceneDelegate.swift */; };
 		27A764C228DB68FA00BB015F /* WeatherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A764C128DB68FA00BB015F /* WeatherListViewController.swift */; };
@@ -18,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2754C35228EB3253006A5CBD /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		2754C37528EBFBE1006A5CBD /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		2754C37B28EC09D3006A5CBD /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		2754C37E28EC118D006A5CBD /* AddWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherViewModel.swift; sourceTree = "<group>"; };
+		2754C38128EC1267006A5CBD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2754C38428EC14FE006A5CBD /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		277990A428EC1AC90016CE79 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
 		27A764BA28DB68FA00BB015F /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A764BD28DB68FA00BB015F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27A764BF28DB68FA00BB015F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,12 +50,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				27A977A928E304330076FF80 /* SnapKit in Frameworks */,
+				2754C37928EBFC2A006A5CBD /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2754C35128EB3233006A5CBD /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				2754C35228EB3253006A5CBD /* WeatherCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		2754C37428EBFBCF006A5CBD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2754C37528EBFBE1006A5CBD /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2754C37A28EC099F006A5CBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2754C37B28EC09D3006A5CBD /* WeatherResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2754C37D28EC117C006A5CBD /* VIewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2754C37E28EC118D006A5CBD /* AddWeatherViewModel.swift */,
+				277990A428EC1AC90016CE79 /* WeatherListViewModel.swift */,
+			);
+			path = VIewModels;
+			sourceTree = "<group>";
+		};
+		2754C38028EC1252006A5CBD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2754C38128EC1267006A5CBD /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2754C38328EC14ED006A5CBD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2754C38428EC14FE006A5CBD /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		27A764B128DB68FA00BB015F = {
 			isa = PBXGroup;
 			children = (
@@ -60,9 +125,15 @@
 		27A764BC28DB68FA00BB015F /* GoodWeather */ = {
 			isa = PBXGroup;
 			children = (
+				2754C38328EC14ED006A5CBD /* Extensions */,
+				2754C38028EC1252006A5CBD /* Utils */,
+				2754C37D28EC117C006A5CBD /* VIewModels */,
+				2754C37A28EC099F006A5CBD /* Models */,
+				2754C37428EBFBCF006A5CBD /* Services */,
+				2754C35128EB3233006A5CBD /* CustomCells */,
+				27A977A428E303AB0076FF80 /* Controllers */,
 				27A764BD28DB68FA00BB015F /* AppDelegate.swift */,
 				27A764BF28DB68FA00BB015F /* SceneDelegate.swift */,
-				27A977A428E303AB0076FF80 /* Controllers */,
 				27A764C328DB68FA00BB015F /* Main.storyboard */,
 				27A764C628DB68FB00BB015F /* Assets.xcassets */,
 				27A764C828DB68FB00BB015F /* LaunchScreen.storyboard */,
@@ -98,6 +169,7 @@
 			name = GoodWeather;
 			packageProductDependencies = (
 				27A977A828E304330076FF80 /* SnapKit */,
+				2754C37828EBFC2A006A5CBD /* Alamofire */,
 			);
 			productName = GoodWeather;
 			productReference = 27A764BA28DB68FA00BB015F /* GoodWeather.app */;
@@ -129,6 +201,7 @@
 			mainGroup = 27A764B128DB68FA00BB015F;
 			packageReferences = (
 				27A977A728E304330076FF80 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				2754C37728EBFC2A006A5CBD /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 27A764BB28DB68FA00BB015F /* Products */;
 			projectDirPath = "";
@@ -157,10 +230,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2754C38528EC14FE006A5CBD /* String+Extensions.swift in Sources */,
+				2754C37628EBFBE1006A5CBD /* WebService.swift in Sources */,
+				2754C37F28EC118D006A5CBD /* AddWeatherViewModel.swift in Sources */,
 				27A764C228DB68FA00BB015F /* WeatherListViewController.swift in Sources */,
 				27A764BE28DB68FA00BB015F /* AppDelegate.swift in Sources */,
+				2754C37C28EC09D3006A5CBD /* WeatherResponse.swift in Sources */,
+				277990A528EC1AC90016CE79 /* WeatherListViewModel.swift in Sources */,
+				2754C35328EB3253006A5CBD /* WeatherCell.swift in Sources */,
 				27A977A628E304170076FF80 /* AddWeatherCityViewController.swift in Sources */,
 				27A764C028DB68FA00BB015F /* SceneDelegate.swift in Sources */,
+				2754C38228EC1267006A5CBD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +460,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2754C37728EBFC2A006A5CBD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
 		27A977A728E304330076FF80 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -391,6 +479,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2754C37828EBFC2A006A5CBD /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2754C37728EBFC2A006A5CBD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		27A977A828E304330076FF80 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 27A977A728E304330076FF80 /* XCRemoteSwiftPackageReference "SnapKit" */;
